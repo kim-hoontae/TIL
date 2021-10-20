@@ -1,5 +1,5 @@
 # LIKE 패턴
-> WHERE 열(컬럼) LIKE '패턴'
+> WHERE 열(컬럼) LIKE '패턴';
 
 패턴을 정의할 때 사용할 수 있는 메타문자
 
@@ -8,13 +8,13 @@
 
 ## 1. 전방일치
 ```
-SELECT * FROM products WHERE description LIKE 'text%'
+SELECT * FROM products WHERE description LIKE 'text%';
 ```
 'text'라는 문자열로 시작되는 행만을 검색
 
 ## 2. 중간일치
 ```
-SELECT * FROM products WHERE description LIKE '%text%'
+SELECT * FROM products WHERE description LIKE '%text%';
 ```
 'text'라는 문자열이 포함된 모든 행을 검색
 > % 는 임의의 문자열과 매치하며, 빈문자열도 매치함
@@ -23,12 +23,12 @@ SELECT * FROM products WHERE description LIKE '%text%'
 
 ## 3. 후방일치
 ```
-SELECT * FROM products WHERE description LIKE '%text'
+SELECT * FROM products WHERE description LIKE '%text';
 ```
 'text'라는 문자열로 끝나는 행만을 검색
 
 # %검색하기
-> WHERE 열(컬럼) LIKE '%\%%'
+> WHERE 열(컬럼) LIKE '%\%%';
 
 ' \ '이스케이프를 사용 하여 메타문자가 아닌 일반문자로 의미하게 할 수 있다.
 
